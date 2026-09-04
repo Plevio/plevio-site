@@ -572,6 +572,146 @@ a { color:inherit; text-decoration:none; }
     grid-template-columns:1fr;
   }
 }
+
+/* Mobile refinement */
+@media (max-width:780px) {
+  .topbar {
+    height:54px;
+  }
+
+  .nav {
+    width:min(100% - 24px, 1180px);
+    font-size:13px;
+  }
+
+  .logo {
+    font-size:15px;
+    letter-spacing:.12em;
+  }
+
+  .wrap {
+    width:min(100% - 28px, 1240px);
+  }
+
+  .hero {
+    grid-template-columns:1fr;
+    gap:22px;
+    padding:42px 0 28px;
+  }
+
+  .hero-lockup-wrap {
+    min-height:0;
+    justify-content:center;
+  }
+
+  .hero-lockup {
+    width:min(390px, 82vw);
+    margin:0 auto;
+  }
+
+  .hero-side {
+    padding-top:0;
+  }
+
+  .hero-side strong {
+    font-size:clamp(28px, 8vw, 36px);
+    line-height:1.14;
+    letter-spacing:-.045em;
+  }
+
+  .hero-side p {
+    margin-top:18px;
+    font-size:14px;
+    line-height:1.65;
+    max-width:none;
+  }
+
+  .channels {
+    gap:10px;
+    padding:0 0 54px;
+  }
+
+  .channels a {
+    flex:1 1 calc(50% - 5px);
+    min-width:0;
+    justify-content:flex-start;
+    padding:10px 12px 10px 10px;
+    font-size:12.5px;
+  }
+
+  .channel-icon {
+    width:21px;
+    height:21px;
+    flex-basis:21px;
+  }
+
+  .section-top {
+    align-items:center;
+    gap:12px;
+    margin-bottom:20px;
+  }
+
+  .section-head {
+    gap:5px;
+  }
+
+  .section-head h2 {
+    font-size:24px;
+    line-height:1.16;
+    letter-spacing:-.04em;
+  }
+
+  .section-head span {
+    font-size:19px;
+    line-height:1.28;
+    letter-spacing:-.03em;
+  }
+
+  .scroll-controls {
+    gap:6px;
+  }
+
+  .scroll-btn {
+    width:34px;
+    height:34px;
+    font-size:22px;
+  }
+
+  .product-strip {
+    gap:14px;
+    padding-bottom:16px;
+  }
+
+  .product-card {
+    flex-basis:84vw;
+    border-radius:22px;
+  }
+
+  .product-copy {
+    min-height:154px;
+    padding:24px 22px 16px;
+  }
+
+  .product-card h3 {
+    font-size:24px;
+  }
+
+  .product-card p {
+    font-size:13px;
+    line-height:1.55;
+  }
+
+  .about-box,
+  .contact-box {
+    padding:28px 24px;
+  }
+
+  .about-box h2,
+  .contact-box h2 {
+    font-size:25px;
+  }
+}
+
 </style>
 </head>
 <body>
